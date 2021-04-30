@@ -1,0 +1,17 @@
+
+name: econ21
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - pandas
+  - geopandas
+  - openpyxl
+  - xlrd
+  - seaborn
+  - jupyter 
+  - notebook
+  - requests
+  - matplotlib
