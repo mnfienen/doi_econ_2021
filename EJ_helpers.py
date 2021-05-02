@@ -2,7 +2,7 @@ import numpy as np
 import geopandas as gp
 import pandas as pd
 import matplotlib.pyplot as plt
-
+ 
 
 
 def find_correlations(pred, responses, gdf):
@@ -10,16 +10,16 @@ def find_correlations(pred, responses, gdf):
 # NOTE: need to rop null values, subset to both prediction and response for each pair as some data are indeed missing
 #
 # returns a list of correlation coefficients in the same order as the reponses
-	corrs = []
+    corrs = []
     for i in responses:
         corrs.append(np.corrcoef(gdf.dropna(subset=[pred,i])[pred].values/gdf.dropna(subset=[pred,i])[pred].max(),
                          gdf.dropna(subset=[pred,i])[i].values/gdf.dropna(subset=[pred,i])[i].max())[0,1])
-   # corrs = [np.sign(i) * (i**2) for i in corrs]
+    # corrs = [np.sign(i) * (i**2) for i in corrs]
     return corrs
 
 def plot_relation(gdf, pred, resp, outfig=None):
-	# plot 3 panels. colorfloods of predictor and response, and cross plot (hexbin) along with pearson's r
-	# optionally save to an external figure
+    # plot 3 panels. colorfloods of predictor and response, and cross plot (hexbin) along with pearson's r
+    # optionally save to an external figure
     fig,ax = plt.subplots(1,3, figsize=(9,4))
     # plot the predictor
     gdf.plot(column=pred, ax=ax[0], legend=True, legend_kwds={'shrink': 0.5}, rasterized=True)
