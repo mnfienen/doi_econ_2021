@@ -25,4 +25,3 @@ This exercise leverages the ability of python, using `pandas` and other packages
 ### Brought to you by our Mascot, who may or may not join us this year
 <p align="center">
 <img src="mascot.jpg" width="200" />
-<\p>
