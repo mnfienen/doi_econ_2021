@@ -15,3 +15,6 @@ This exercise was motivated by an NPR [Science Friday](https://www.sciencefriday
 
 ## 1) Glen Canyon Dam and the Colorado River
 This exercise leverages the ability of python, using `pandas` and other packages, to download USGS water data on the Colorado River from the National Water Information System ([NWIS](https://waterdata.usgs.gov/nwis?)) to explore the changes -- intentional and potentially not intentional -- to river flow in the Colorado River entering the Grand Canyon due to construction and operation of the Glen Canyon Dam in the 1960s. In particular, the implementation of the [Colorado River Compact](https://en.wikipedia.org/wiki/Colorado_River_Compact) motivates exploration. The NWIS river flow records at [Lees Ferry](https://waterdata.usgs.gov/usa/nwis/uv?09380000) and in the [Grand Canyon](https://waterdata.usgs.gov/usa/nwis/uv?site_no=09402500) are continuous from the 1920s providing a rich dataset to explore qualitatively and quantitatively.
+
+### Brought to you by our Mascot, who may or may not join us this year
+![](mascot.jpg)
