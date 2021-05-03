@@ -2,8 +2,6 @@ import numpy as np
 import geopandas as gp
 import pandas as pd
 import matplotlib.pyplot as plt
- 
-
 
 def find_correlations(pred, responses, gdf):
 # function to calculate Pearson's r correlation coefficient for a predictor and list of responses in the (geo)dataframe passed in
