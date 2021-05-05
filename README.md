@@ -25,3 +25,14 @@ This exercise leverages the ability of python, using `pandas` and other packages
 ### Brought to you by our Mascot, who may or may not join us this year
 <p align="center">
 <img src="mascot.jpg" width="200" />
+
+## Optional local installation instructions if you want to really get started with Python
+
+0. Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for your current operating system
+1. Create the same environment we are using in the tutorial but doing the following:  
+    a. Download this entire repository as a zipfile from the green "CODE" button above (you can choose Download zip)  
+    b. On Windows open a Miniconda Prompt from your start menu (on Mac or Linux, open a terminal)  
+    c. Navigate to the "binder" directory  
+    d. type `conda env create -f environment.yml` and answer "y" to a couple questions  
+    e. activate the environment by typing `conda activate econ21`  
+    f. Program and enjoy!
